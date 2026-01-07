@@ -1,4 +1,7 @@
+package models;
+
 public class Game {
+
     private int gameId;
     private String name;
     private String category;
@@ -16,7 +19,7 @@ public class Game {
         this.stock = stock;
     }
 
-    // Getters and Setters
+    // Getters & Setters
     public int getGameId() {
         return gameId;
     }
@@ -55,5 +58,17 @@ public class Game {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    // Optional: For debugging / printing
+    @Override
+    public String toString() {
+        return "Game{" +
+                "id=" + gameId +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                '}';
     }
 }
